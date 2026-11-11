@@ -51,6 +51,9 @@ The main objective of this project is to understand the basics of HTML and CSS w
 
 ## Developer
 **Aditya Raj Singh**
+**Shahab Khan**
+**Prashant Sharma**
+
 
 ---
 

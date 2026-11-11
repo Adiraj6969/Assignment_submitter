@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+
+    <style>
+        body {
+            background-color: #fba17e;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            width: 350px;
+            margin: 150px auto;
+            background-color: #f7d794;
+            border: 2px solid #ee6200;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        legend {
+            background-color: #ff9a00;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        label {
+            font-weight: bold;
+            color: #ee6200;
+            font-size: 16px;
+        }
+
+        #success_button {
+            background-color: #ee6200;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #success_button:hover {
+            background-color: #ff9a00;
+        }
+
+        #success_button:active {
+            background-color: #fba17e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>STATUS</legend>
+
+        <h2>✓ Success!</h2>
+
+        <label>
+            The assignment was successfully submitted.
+        </label>
+
+        <br><br>
+
+        <button type="button" id="success_button"
+            onclick="window.location.href='studentlogin.html'">
+            Go Back
+        </button>
+
+    </fieldset>
+
+</body>
+</html>

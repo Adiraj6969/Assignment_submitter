@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login</title>
+    <style>
+      #sumbmit_button {
+        background-color: #ee6200;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      #sumbmit_button:hover {
+        background-color: #ff9a00;
+      }
+
+      #sumbmit_button:active {
+        background-color: #fba17e;
+      }
+
+      body {
+        text-align: center;
+      }
+
+      fieldset {
+        width: 350px;
+        margin: auto;
+      }
+      #assnamebox {
+        width: 280px;
+        height: 30px;
+      }
+
+      body {
+        background-color: #fba17e;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      fieldset {
+        width: 350px;
+        margin: auto;
+        background-color: #f7d794;
+        border: 2px solid #ee6200;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      legend {
+        background-color: #ff9a00;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      label {
+        font-weight: bold;
+        color: #ee6200;
+      }
+
+      input,
+      select {
+        padding: 7px;
+        border: 1px solid #ee6200;
+        border-radius: 5px;
+        background-color: white;
+      }
+
+      #assnamebox {
+        width: 280px;
+        height: 25px;
+      }
+
+      input[type="submit"] {
+        background-color: #ee6200;
+        color: white;
+        padding: 10px 25px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #ff9a00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Assignment tracker</legend>
+
+      <form>
+        <label id="Name">Name</label>
+        <br />
+        <input id="namebox" type="text" placeholder="Name goes here" />
+        <br /><br />
+
+        <label id="roll_number">Roll number</label>
+        <br />
+        <input id="rollbox" type="number" placeholder="Roll number goes here" />
+        <br /><br />
+        <label id="section_box">Section</label><br />
+        <input
+          id="section"
+          type="text"
+          required
+          placeholder="ie.K4P2XXX"
+        /><br /><br />
+
+        <label id="course">Select your course</label>
+        <br />
+        <select id="coursebox">
+          <option value="">Choose an option</option>
+          <option value="cse">Computer science</option>
+          <option value="electronics">Electronic Engineering</option>
+          <option value="AI">AI/ML</option>
+          <option value="IT">Information Technology</option>
+        </select>
+        <br /><br />
+
+        <label for="subject">Select your subject:</label>
+        <br />
+        <select id="subject" name="subject" required>
+          <option value="" selected disabled>Select a subject</option>
+          <option value="INT108">INT108</option>
+          <option value="CSE326">CSE326</option>
+          <option value="CSE335">CSE335</option>
+          <option value="MTH165">MTH165</option>
+          <option value="MEC136">MEC136</option>
+          <option value="CSE111">CSE111</option>
+        </select>
+        <br /><br />
+        <label for="teacher">Select your teacher:</label>
+        <br />
+
+        <select id="teacher" name="teacher" required>
+          <option value="" selected disabled>Choose your teacher</option>
+
+          <option value="CSE111">CSE111 - Dr. Kwal Krishan</option>
+          <option value="CSE326">CSE326 - Dr. Shilpa Sharma</option>
+          <option value="INT108">INT108 - Parminder Singh</option>
+          <option value="INT335">INT335 - Disha Maity</option>
+          <option value="MEC136">MEC136 - Dr. Rahul Sharma</option>
+          <option value="MTH165">MTH165 - Deepak Kumar</option>
+          <option value="Puspendu Giri">Puspendu Giri</option>
+        </select>
+
+        <br /><br />
+
+        <label id="Assignmentname">Assignment Name</label>
+        <br />
+        <input
+          id="assnamebox"
+          type="text"
+          placeholder="ie. Assignmentname/subject code"
+          required
+        />
+        <br /><br />
+
+        <label id="date">Date</label>
+        <br />
+        <input type="date" id="date_box" required />
+        <br /><br />
+
+        <label id="time">Time</label>
+        <br />
+        <input type="time" id="time_box" required />
+        <br /><br />
+
+        <label id="filein">Enter assignments</label>
+        <br />
+        <input type="file" id="file_box" required />
+        <br /><br />
+        <button type="button" id="sumbmit_button"
+        onclick="window.location.href='finale.html'">
+    Submit
+</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
